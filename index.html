@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERIDEX CHAIN – Fair & Open Blockchain</title>
+    <style>
+        * {margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+        body {background:linear-gradient(135deg,#0D2818 0%,#1A4D2E 50%,#2D7D4F 100%);min-height:100vh;color:#fff;line-height:1.7;}
+        body::before {content:'';position:fixed;top:0;left:0;width:100%;height:100%;background:radial-gradient(rgba(255,255,255,0.05) 1px,transparent 1px);background-size:30px 30px;pointer-events:none;z-index:0;}
+        .container {position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:2rem;}
+        nav {display:flex;justify-content:space-between;align-items:center;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:2rem;flex-wrap:wrap;gap:1rem;}
+        .logo-icon {width:40px;height:40px;display:inline-block;vertical-align:middle;margin-right:0.5rem;}
+        .logo {font-size:1.5rem;font-weight:700;color:#4ADE80;text-decoration:none;display:flex;align-items:center;}
+        .tab-links button {background:transparent;border:none;color:#fff;opacity:0.85;padding:0.5rem 1rem;margin:0 0.25rem;cursor:pointer;font-size:1rem;border-radius:6px;transition:0.3s;}
+        .tab-links button.active {background:rgba(74,222,128,0.2);color:#4ADE80;opacity:1;}
+        .tab-links button:hover {opacity:1;color:#4ADE80;}
+        .social-links a {color:#fff;text-decoration:none;margin-left:1rem;opacity:0.85;transition:0.3s;}
+        .social-links a:hover {opacity:1;color:#4ADE80;}
+        .tab-content {display:none;animation:fade 0.3s ease;}
+        .tab-content.active {display:block;}
+        @keyframes fade {from{opacity:0;}to{opacity:1;}}
+        h1 {font-size:2.5rem;color:#4ADE80;margin-bottom:1.5rem;}
+        .sub-heading {font-size:1.25rem;opacity:0.85;max-width:700px;margin-bottom:2rem;}
+        .card {background:rgba(255,255,255,0.08);padding:2rem;border-radius:12px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.15);margin-bottom:1.5rem;transition:0.3s;}
+        .card:hover {transform:translateY(-3px);background:rgba(255,255,255,0.12);}
+        .card h2 {color:#4ADE80;margin-bottom:1rem;}
+        .btn {display:inline-block;padding:0.8rem 2rem;background:#4ADE80;color:#0D2818;text-decoration:none;border-radius:8px;font-weight:600;margin:0.5rem 0.5rem 0 0;transition:0.3s;border:none;cursor:pointer;}
+        .btn:hover {background:#22C55E;box-shadow:0 0 15px rgba(74,222,128,0.4);}
+        footer {text-align:center;padding:2rem;border-top:1px solid rgba(255,255,255,0.1);opacity:0.7;margin-top:3rem;}
+        footer a {color:#4ADE80;text-decoration:none;margin:0 0.5rem;}
+        @media (max-width:768px){h1{font-size:2rem;}.tab-links button{padding:0.4rem 0.7rem;font-size:0.9rem;}}
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Navigasi & Logo -->
+    <nav>
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 100 100" fill="none">
+                <path d="M50 10 L90 30 L90 70 L50 90 L10 70 L10 30 Z" stroke="#4ADE80" stroke-width="4" fill="rgba(74,222,128,0.1)"/>
+                <circle cx="50" cy="50" r="20" stroke="#4ADE80" stroke-width="3" fill="none"/>
+                <path d="M50 30 L50 70 M30 50 L70 50" stroke="#4ADE80" stroke-width="3"/>
+            </svg>
+            VERIDEX CHAIN
+        </div>
+        <div class="tab-links">
+            <button class="tab-btn active" data-tab="home">Home</button>
+            <button class="tab-btn" data-tab="about">About</button>
+            <button class="tab-btn" data-tab="features">Features</button>
+            <button class="tab-btn" data-tab="docs">Docs</button>
+            <button class="tab-btn" data-tab="community">Community</button>
+        </div>
+        <div class="social-links">
+            <a href="https://x.com/veridexchain" target="_blank">X</a>
+            <a href="#" target="_blank">Telegram</a>
+            <a href="#" target="_blank">Discord</a>
+        </div>
+    </nav>
+
+    <!-- Halaman HOME -->
+    <div id="home" class="tab-content active">
+        <h1>Truth. Fairness. For All.</h1>
+        <p class="sub-heading">VERIDEX CHAIN is a decentralized blockchain built to deliver true transparency, equal access, and financial freedom to everyone, everywhere.</p>
+        
+        <div class="card">
+            <h2>What is VERIDEX CHAIN?</h2>
+            <p>We are building a network that belongs to its people — not controlled by corporations or gatekeepers. Fast, secure, and fully open, our blockchain is designed to create a fairer system for every participant.</p>
+            <button class="btn tab-btn" data-tab="about">Learn More</button>
+        </div>
+        <div class="card">
+            <h2>Core Features</h2>
+            <p>Experience instant transactions, minimal fees, enterprise-grade security, and full ownership of your assets. Whether you are building applications, transferring value, or staking — everything is simple, open, and accessible.</p>
+            <button class="btn tab-btn" data-tab="features">View All Features</button>
+        </div>
+        <div class="card">
+            <h2>Stay Updated</h2>
+            <p>Follow our official channels for the latest news, updates, and announcements:</p>
+            <a href="https://x.com/veridexchain" target="_blank" class="btn">Follow on X / @veridexchain</a>
+        </div>
+    </div>
+
+    <!-- Halaman ABOUT -->
+    <div id="about" class="tab-content">
+        <h1>About VERIDEX CHAIN</h1>
+        <div class="card">
+            <h2>Our Mission</h2>
+            <p>We created VERIDEX CHAIN to build a financial system that is truly fair, transparent, and accessible to everyone. No middlemen, no hidden fees, no unfair advantages — just open code that serves the community.</p>
+        </div>
+        <div class="card">
+            <h2>Our Vision</h2>
+            <p>A world where everyone has full control over their assets and data. We believe blockchain technology should empower people, not enrich a small group.</p>
+        </div>
+        <div class="card">
+            <h2>How It Works</h2>
+            <p>Powered by a fast and efficient consensus mechanism, VERIDEX CHAIN processes transactions quickly while keeping costs extremely low. Every record is immutable and visible on the public ledger.</p>
+        </div>
+        <button class="btn tab-btn" data-tab="home">← Back to Home</button>
+    </div>
+
+    <!-- Halaman FEATURES -->
+    <div id="features" class="tab-content">
+        <h1>Key Features</h1>
+        <div class="card"><h2>⚡ Fast Transactions</h2><p>Process thousands of transactions per second with near-instant confirmation times.</p></div>
+        <div class="card"><h2>💰 Ultra-Low Fees</h2><p>Send value or interact with dApps for just a fraction of a cent.</p></div>
+        <div class="card"><h2>🔐 Secure & Decentralized</h2><p>Protected by robust cryptography and run by a distributed network of validators.</p></div>
+        <div class="card"><h2>🌍 Fully Open & Transparent</h2><p>All activity is recorded on a public ledger. Anyone can verify and audit the network.</p></div>
+        <div class="card"><h2>🛠️ Developer Friendly</h2><p>Easy to build, deploy, and scale your decentralized applications.</p></div>
+        <button class="btn tab-btn" data-tab="home">← Back to Home</button>
+    </div>
+
+    <!-- Halaman DOCS -->
+    <div id="docs" class="tab-content">
+        <h1>Documentation</h1>
+        <div class="card"><h2>Getting Started</h2><p>Learn how to set up your wallet, connect to the network, and make your first transaction.</p></div>
+        <div class="card"><h2>Developer Guides</h2><p>Access our API references, smart contract standards, and integration tutorials.</p></div>
+        <div class="card"><h2>Whitepaper</h2><p>Read the full technical details, tokenomics, and roadmap of VERIDEX CHAIN.</p></div>
+        <button class="btn tab-btn" data-tab="home">← Back to Home</button>
+    </div>
+
+    <!-- Halaman COMMUNITY -->
+    <div id="community" class="tab-content">
+        <h1>Join Our Community</h1>
+        <div class="card">
+            <h2>Official Channels</h2>
+            <p>Be part of the conversation. Get updates, ask questions, and help shape the future of VERIDEX CHAIN.</p>
+            <br>
+            <a href="https://x.com/veridexchain" target="_blank" class="btn">X / @veridexchain</a>
+            <a href="#" target="_blank" class="btn">Telegram</a>
+            <a href="#" target="_blank" class="btn">Discord</a>
+        </div>
+        <div class="card">
+            <h2>Important Note</h2>
+            <p>These are the only official channels. Always verify the username before clicking any links or sharing any information.</p>
+        </div>
+        <button class="btn tab-btn" data-tab="home">← Back to Home</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 VERIDEX CHAIN. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p style="margin-top:0.8rem;">Official: <a href="https://x.com/veridexchain" target="_blank">x.com/veridexchain</a></p>
+    </footer>
+</div>
+
+<script>
+// Sistem klik tab ganti halaman
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tab = btn.dataset.tab;
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll(`[data-tab="${tab}"]`).forEach(b => b.classList.add('active'));
+        document.getElementById(tab).classList.add('active');
+    });
+});
+</script>
+</body>
+</html>
